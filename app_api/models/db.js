@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const { connect } = require('../routes');
 let dbURI = 'mongodb://localhost/travlr';
+
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
